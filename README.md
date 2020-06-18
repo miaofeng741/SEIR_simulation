@@ -48,6 +48,6 @@ The second part is about some sensitivity analysis when changing hospital protoc
 
 Similarly, this part of the sensitivity analysis program is based on the basic model program by adjusting the value of the parameters.
 
-Contact：Miao Feng;d201880671@hust.edu.cn
+Contact：Wang Hongwei;hwwang at hust.edu.cn
 
 
