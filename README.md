@@ -39,7 +39,7 @@ The first part is about some sensitivity analysis in the process of solving beta
 * Changed the incubation period parameter from lognormal(1.443,0.64) to gamma(1.975,2.633)、lognormal(1.335,0.683) or lognormal(1.712,0.537).
 * Changed the self-cure preiod parameter from gamma(22.563,0.842) to lognormal(2.923,0.208)、gamma(15.016,10.32) or gamma(33.93,0.687).
 
-This part of simulation experiment is realized by changing the relevant parameters in solve_beta_MTkl_simulation.py
+This part of simulation experiment is realized by changing the relevant parameters in solve_beta_MTKL_simulation.py
 
 The second part is about some sensitivity analysis when changing hospital protocols.In this part, we conducted sensitivity analysis on the transmission rate, the proportion of mild and severe patients, and time-related parameters.
 * Three different transmission rates were adopted(Please refer to the paper for the specific way).
