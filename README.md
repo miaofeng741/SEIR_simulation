@@ -18,6 +18,16 @@ In this model, we took into account factors such as population movement, person-
 
 See how to implement this part of the model in solve_beta_MTKL_simulation.py.
 
+Hospital Bed Capacity Expansion Plans
+-----
+To quantitatively examine the effect of hospital bed capacity expansion plan on the epidemic spread, a set of alternative plans are assessed using the extended SEIR model following Monte Carlo simulation method. In our assessment study, the data of daily open beds of designated and Fangcang shelter hospitals are used to infer the daily number of admitted patients in the simulation according to the admission rules. Before Jan 21, 2020, the actual hospital admission data are used in the simulation.This part of the program is named ht_plan_model.py.
+
+Read the article for more details about the model.
+
+It is worth noting that we compared the different hospital capacity expansion schemes, there are 14 in total, this comparison is made by changing the data related to the hospital beds in the program, which is stored in the different_ht_plan.csv.
+
+In addition, in order to enhance the comparability between different programs, and considering that the hospital capacity program changes at different time points, we first need to work out the initial values of each state variable at different time points in the actual simulation experiment, and then substitute them into different program procedures for experiments.The program to evaluate the initial value is ht_plan_model_initial.py.
+
 Sensitivity Analysis
 -------
 At the end of the model, we analyze the sensitivity of some necessary parameters.
@@ -36,6 +46,7 @@ The second part is about some sensitivity analysis when changing hospital protoc
 * Change the proportion of patients with mild or severe diseases from 0.81/0.19 to 0.86/0.14 or 0.76/0.24.
 * The incubation period and the self-healing period were extended or shortened by three days, respectively, or their distribution patterns were changed.
 
+Similarly, this part of the sensitivity analysis program is based on the basic model program by adjusting the value of the parameters.
 
 
 
