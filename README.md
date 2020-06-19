@@ -37,7 +37,7 @@ The experiment of sensitivity analysis can be roughly divided into two parts.
 The first part is about some sensitivity analysis in the process of solving beta.We studied the influence degree of initial value, incubation period and self-cure preiod on the transmission rate. The specific scheme is as follows:
 * Select different program initial values:set1~set10.
 * Changed the incubation period parameter from lognormal(1.443,0.64) to gamma(1.975,2.633)、lognormal(1.335,0.683) or lognormal(1.712,0.537).
-* Changed the self-cure preiod parameter from gamma(22.563,0.842) to lognormal(2.923,0.208)、gamma(15.016,10.32) or gamma(33.93,0.687).
+* Changed the self-cure preiod parameter from gamma(22.563,0.842) to lognormal(2.923,0.208)、gamma(15.016,1.032) or gamma(33.93,0.687).
 
 This part of simulation experiment is realized by changing the relevant parameters in solve_beta_MTKL_simulation.py
 
