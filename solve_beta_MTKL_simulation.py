@@ -141,7 +141,7 @@ def Rule_new_FF(DQ_new_wait_max,SQ_new): #Update the queue for admission
 def SQ_to_SQ_wait(SQ_new):# Time to cure mild patients
     back_data = [i for i in range(1,27)]#title
     back_list = [] 
-    back_list = one_back_to_past(gamma,18.062,0.941, SQ_new,11,26) 
+    back_list = one_back_to_past(gamma,18.063,0.941, SQ_new,11,26) 
     back_data = numpy.row_stack((back_data,back_list)) 
     back_data= back_data[1,:]  
     return back_data
@@ -161,7 +161,7 @@ def SQ_to_SQ_wait_times(SQ_new,times): # Time to cure mild patients_MTKL
 def SZ_to_SZ_wait(SZ_new):#Time to cure critically ill patients
     back_data = [i for i in range(1,42)]
     back_list = [] 
-    back_list = one_back_to_past(gamma,14.951, 1.551, SZ_new, 12,41) 
+    back_list = one_back_to_past(gamma,14.951, 1.552, SZ_new, 12,41) 
     back_data = numpy.row_stack((back_data,back_list)) 
     back_data= back_data[1,:] 
     return back_data
